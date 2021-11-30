@@ -32,3 +32,7 @@ print('numero de personas en casa: ' + str(len(atencion_casa)))
 # Punto 5
 recuperados = data[data['Recuperado'] == 'Recuperado']
 print('numero de personas recuperadas: ' + str(len(recuperados)))
+
+# Punto 6
+fallecidas = data[data['Ubicación del caso'] == 'Fallecido']
+print('numero de personas fallecidas: ' + str(len(fallecidas)))
