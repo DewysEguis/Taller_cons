@@ -21,3 +21,6 @@ print('numero de casos de contagio: ' + str(len(data)))
 # Punto 2
 municipios = data['Nombre municipio'].unique()
 print('numero de municipios afectados: ' + str(len(municipios)))
+
+# Punto 3
+print('municipios afectados: \n' + str(municipios))
