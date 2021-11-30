@@ -25,6 +25,10 @@ print('numero de municipios afectados: ' + str(len(municipios)))
 # Punto 3
 print('municipios afectados: \n' + str(municipios))
 
-# Punt4
+# Punto 4
 atencion_casa = data[data['Ubicación del caso'] == 'Casa']
 print('numero de personas en casa: ' + str(len(atencion_casa)))
+
+# Punto 5
+recuperados = data[data['Recuperado'] == 'Recuperado']
+print('numero de personas recuperadas: ' + str(len(recuperados)))
