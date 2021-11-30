@@ -17,3 +17,7 @@ data['Sexo'].replace('f', 'F', inplace=True)
 
 # Punto 1 
 print('numero de casos de contagio: ' + str(len(data)))
+
+# Punto 2
+municipios = data['Nombre municipio'].unique()
+print('numero de municipios afectados: ' + str(len(municipios)))
