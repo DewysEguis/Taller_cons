@@ -92,3 +92,6 @@ print(data.groupby(list_by)['Edad'].mean())
 # Punto 20
 pais_procedencia = data.groupby('Nombre del país').count()
 print(pais_procedencia['ID'].sort_values(ascending=False))
+
+# Punto 21
+print(data.sort_values(ascending=False, by='Fecha de diagnóstico'))
