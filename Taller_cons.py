@@ -113,3 +113,6 @@ print('tasa de mortalidad:')
 print(mun_falle['ID'] / len(data) * 100)
 print('\ntasa de recuperación:')
 print(mun_recu['ID'] / len(data) * 100)
+
+# Punto 25
+print(data.groupby(['Nombre municipio', 'Ubicación del caso'])['ID'].count())
