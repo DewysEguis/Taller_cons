@@ -145,5 +145,11 @@ por_tipo = data.groupby('Tipo de contagio')['ID'].count()
 por_tipo.plot(subplots=True, kind='bar', title='34)')
 plt.show()
 
+# Punto 35
+values = [len(data), len(fallecidas), len(recuperados)]
+index = ['Contageado', 'fallecidos', 'recuperados']
+total_contagiados = pd.Series(values, index=index)
+total_contagiados.plot(subplots=True, kind='bar', title='35)')
+
 
 
