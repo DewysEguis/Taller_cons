@@ -84,3 +84,7 @@ print(dep_conta)
 # Punto 18
 contageado_sexo = data.groupby('Sexo')
 print(contageado_sexo.count()['ID'])
+
+# Punto 19
+list_by = ['Sexo', 'Nombre municipio', 'Nombre departamento']
+print(data.groupby(list_by)['Edad'].mean())
