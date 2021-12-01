@@ -56,3 +56,8 @@ print(tipos_casos['ID'].sort_values(ascending=False))
 dep_conta = data.groupby('Nombre departamento').count()
 top_10_dep = dep_conta['ID'].sort_values(ascending=False).head(10)
 print(top_10_dep)
+
+# Punto 12
+dep_falle = fallecidas.groupby('Nombre departamento').count()
+print(dep_falle['ID'].sort_values(ascending=False).head(10))
+
