@@ -102,4 +102,10 @@ tasa_recuperacion = (len(recuperados) / len(data)) * 100
 print('tasa de mortalidad: ' + "{:.6f}".format(tasa_mortalidad))
 print('tasa de recuperación: ' + "{:.6f}".format(tasa_recuperacion))
 
+# Punto 23
+print('tasa de mortalidad:')
+print(dep_falle['ID'] / len(data) * 100)
+print('\ntasa de recuperación:')
+print(dep_recu['ID'] / len(data) * 100)
+
 
