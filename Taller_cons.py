@@ -80,3 +80,7 @@ print(mun_recu['ID'].sort_values(ascending=False).head(10))
 
 # Punto 17
 print(dep_conta)
+
+# Punto 18
+contageado_sexo = data.groupby('Sexo')
+print(contageado_sexo.count()['ID'])
