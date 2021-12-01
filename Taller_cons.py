@@ -73,3 +73,7 @@ print(top_10_mun)
 # Punto 15
 mun_falle = fallecidas.groupby('Nombre municipio').count()
 print(mun_falle['ID'].sort_values(ascending=False).head(10))
+
+# Punto 16
+mun_recu = recuperados.groupby('Nombre municipio').count()
+print(mun_recu['ID'].sort_values(ascending=False).head(10))
