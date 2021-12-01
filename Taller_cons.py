@@ -88,3 +88,7 @@ print(contageado_sexo.count()['ID'])
 # Punto 19
 list_by = ['Sexo', 'Nombre municipio', 'Nombre departamento']
 print(data.groupby(list_by)['Edad'].mean())
+
+# Punto 20
+pais_procedencia = data.groupby('Nombre del país').count()
+print(pais_procedencia['ID'].sort_values(ascending=False))
