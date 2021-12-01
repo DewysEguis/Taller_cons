@@ -108,4 +108,8 @@ print(dep_falle['ID'] / len(data) * 100)
 print('\ntasa de recuperación:')
 print(dep_recu['ID'] / len(data) * 100)
 
-
+# Punto 24
+print('tasa de mortalidad:')
+print(mun_falle['ID'] / len(data) * 100)
+print('\ntasa de recuperación:')
+print(mun_recu['ID'] / len(data) * 100)
