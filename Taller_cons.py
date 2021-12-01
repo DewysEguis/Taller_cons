@@ -70,3 +70,6 @@ mun_conta = data.groupby('Nombre municipio').count()
 top_10_mun = mun_conta['ID'].sort_values(ascending=False).head(10)
 print(top_10_mun)
 
+# Punto 15
+mun_falle = fallecidas.groupby('Nombre municipio').count()
+print(mun_falle['ID'].sort_values(ascending=False).head(10))
