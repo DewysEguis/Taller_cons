@@ -122,3 +122,7 @@ print(data.groupby(['Nombre municipio'])['Edad'].mean())
 
 # Punto 27
 aten = data.groupby('Fecha de diagnóstico')['ID'].count()
+
+# punto 30
+print(data.groupby('Edad')['ID'].count().sort_values(ascending=False))
+
