@@ -3,6 +3,7 @@ import pandas as pd
 
 url = 'covid_22_noviembre.csv'
 data = pd.read_csv(url, low_memory=False)
+import matplotlib.pyplot as plt
 
 data.rename(columns={'ID de caso': 'ID'}, inplace=True)
 
@@ -129,4 +130,11 @@ print(data.groupby('Edad')['ID'].count().sort_values(ascending=False))
 # Punto 31
 por_atencion = data.groupby('Ubicación del caso')['ID'].count()
 print(por_atencion.sort_values(ascending=False) / len(data) * 100)
+
+# Punto 32
+por_atencion.plot(subplots=True, kind='bar', title='32)')
+plt.show()
+
+
+
 
