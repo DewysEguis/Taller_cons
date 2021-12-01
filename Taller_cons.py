@@ -61,3 +61,7 @@ print(top_10_dep)
 dep_falle = fallecidas.groupby('Nombre departamento').count()
 print(dep_falle['ID'].sort_values(ascending=False).head(10))
 
+# Punto 13
+dep_recu = recuperados.groupby('Nombre departamento').count()
+print(dep_recu['ID'].sort_values(ascending=False).head(10))
+
