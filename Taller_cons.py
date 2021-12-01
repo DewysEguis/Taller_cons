@@ -95,3 +95,11 @@ print(pais_procedencia['ID'].sort_values(ascending=False))
 
 # Punto 21
 print(data.sort_values(ascending=False, by='Fecha de diagnóstico'))
+
+# Punto 22
+tasa_mortalidad = (len(fallecidas) / len(data)) * 100
+tasa_recuperacion = (len(recuperados) / len(data)) * 100
+print('tasa de mortalidad: ' + "{:.6f}".format(tasa_mortalidad))
+print('tasa de recuperación: ' + "{:.6f}".format(tasa_recuperacion))
+
+
