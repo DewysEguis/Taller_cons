@@ -51,3 +51,8 @@ print('departamentos afectados: \n' + str(departamentos))
 # Punto 10
 tipos_casos = data.groupby('Ubicación del caso').count()
 print(tipos_casos['ID'].sort_values(ascending=False))
+
+# Punto 11
+dep_conta = data.groupby('Nombre departamento').count()
+top_10_dep = dep_conta['ID'].sort_values(ascending=False).head(10)
+print(top_10_dep)
