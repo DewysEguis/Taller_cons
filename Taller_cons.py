@@ -116,3 +116,6 @@ print(mun_recu['ID'] / len(data) * 100)
 
 # Punto 25
 print(data.groupby(['Nombre municipio', 'Ubicación del caso'])['ID'].count())
+
+# Punto 26
+print(data.groupby(['Nombre municipio'])['Edad'].mean())
