@@ -126,3 +126,7 @@ aten = data.groupby('Fecha de diagnóstico')['ID'].count()
 # punto 30
 print(data.groupby('Edad')['ID'].count().sort_values(ascending=False))
 
+# Punto 31
+por_atencion = data.groupby('Ubicación del caso')['ID'].count()
+print(por_atencion.sort_values(ascending=False) / len(data) * 100)
+
